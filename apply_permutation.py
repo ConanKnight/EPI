@@ -3,7 +3,15 @@ from test_framework import generic_test
 
 def apply_permutation(perm, A):
     # TODO - you fill in here.
-    return
+    # B = [0]*len(A)
+    # for i in range(len(perm)):
+    #     B[perm[i]] = A[i]
+    # return B
+    for i in range(len(A)):
+        while perm[i] != i:
+            A[i], A[perm[i]] = A[perm[i]], A[i]
+            perm[perm[i]], perm[i] = perm[i], perm[perm[i]]
+    # print(A)
 
 
 def apply_permutation_wrapper(perm, A):
