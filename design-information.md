@@ -67,3 +67,6 @@ The final game score
 ## Relationships
 
 * ```MainMenu``` has an association relationship with ```Settings```, ```Game```, and ```Statistics```.
+* Each ```Board``` has just one ```Setting```.
+* Each ```Game``` has one or more ```Board```.
+* Each ```Statistics``` can have any ```Game```.
