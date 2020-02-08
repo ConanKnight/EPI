@@ -70,3 +70,4 @@ The final game score
 * Each ```Board``` has just one ```Setting```.
 * Each ```Game``` has one or more ```Board```.
 * Each ```Statistics``` can have any ```Game```.
+* ```Game``` uses ```Time``` utility.
